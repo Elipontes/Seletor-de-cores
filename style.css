@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Declaração de variáveis CSS */
+:root {
+    --preto:#000000;
+    --begeclaro:#faebd7;
+    --fontepadrão:'bebas neue','sans-serif';
+}
+
+body,select {
+    font-family: var(--fontepadrão);
+    font-size: 20px;
+}
+
+#texto {
+    font-size: 18px;
+}
+
+h1,p {
+    color:var(--preto);
+    text-align: center;
+}
+
+#colorContainer {
+    height: 230px;
+    width: 300px;
+    padding: 15px;
+    margin: auto;
+    margin-top: 2px;
+    border: 1px solid var(--preto);
+    box-shadow: 1px 2px 6px var(--preto);
+    border-radius: 5px;
+    background-color: var(--begeclaro);
+    text-align: center;
+
+}
+
+input[type=color] {
+    width: 70px;
+    height: 70px;
+    border: 3px solid var(--begeclaro);
+    margin-top: 10px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+input[type=color]::-webkit-color-swatch {
+  border: none;
+  border-radius: 50%;
+  padding: 0;
+}
+
+input[type=color]::-webkit-color-swatch-wrapper {
+    border: none;
+    border-radius: 50%;
+    padding: 0;
+}
