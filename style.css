@@ -7,7 +7,7 @@
 /* Declaração de variáveis CSS */
 :root {
     --preto:#000000;
-    --begeclaro:#faebd7;
+    --offwhite:#ffffffe3;
     --fontepadrão:'bebas neue','sans-serif';
 }
 
@@ -20,7 +20,20 @@ body,select {
     font-size: 18px;
 }
 
-h1,p {
+.gradient {
+    background-image: linear-gradient(90deg, #ff0000 0%, #ffff00 70%, #0000ff 100%);
+    color: transparent;
+    -webkit-background-clip: text;
+    animation: move 1s infinite;
+}
+  
+  @keyframes move {
+    50% {
+      background-image: linear-gradient(262deg, #9400d3 0%, #00ff00 56%, #ff0000 100%);
+    }
+}
+
+p {
     color:var(--preto);
     text-align: center;
 }
@@ -30,19 +43,18 @@ h1,p {
     width: 300px;
     padding: 15px;
     margin: auto;
-    margin-top: 2px;
-    border: 1px solid var(--preto);
-    box-shadow: 1px 2px 6px var(--preto);
+    margin-top: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.577);
+    box-shadow: #32325d40 0px 2px 5px -1px, #0000004d 0px 1px 3px -1px;;
     border-radius: 5px;
-    background-color: var(--begeclaro);
+    background-color: var(--offwhite);
     text-align: center;
-
 }
 
 input[type=color] {
     width: 70px;
     height: 70px;
-    border: 3px solid var(--begeclaro);
+    border: 3px solid var(--offwhite);
     margin-top: 10px;
     border-radius: 50%;
     overflow: hidden;
