@@ -7,4 +7,4 @@ Tecnologias utilizadas:
 - CSS
 - JavaScript
 
-#### Link da Page: https://elipontes.github.io/Seletor-de-cores/ 
+#### [Link da Page](https://elipontes.github.io/Testador-de-cores-fundo/)
